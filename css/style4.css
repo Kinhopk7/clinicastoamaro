@@ -1,0 +1,163 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body{
+	background-color: rgb(215, 250, 238);
+
+}
+.center{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+#topo{
+	height: 200px;
+	padding: 20px 0;
+}
+.logo{
+	width: 50%;
+}
+.logo img{
+	width: 170px;
+	height: 170px;
+}
+.menu a:hover{
+    color:#496976;
+}
+.menu{
+	padding-top: 15px;
+	width: 50%;
+	height: 100px;
+	text-align: right;
+}
+.menu a{
+	color:black;
+	text-decoration: none;
+	font-weight: bold;
+	margin-right: 15px;
+}
+.menu ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.box{
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	transform: translate(-50%,-30%);
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 15px;
+	border-radius: 15px;
+	width: 25%;
+	color: white;
+}
+fieldset{
+	border: 3px solid darkcyan;
+
+}
+legend{
+	border: 1px solid #008b8b;
+	padding: 10px;
+	text-align: center;
+	background-color: #008b8b;
+	border-radius: 7px;
+}
+.inputbox{
+	position: relative;
+}
+.inputuser{
+	background: none;
+	border: none;
+	border-bottom: 1px solid white;
+	outline: none;
+	color: white;
+	font-size: 15px;
+	width: 100%;
+	letter-spacing: 2px;
+}
+.labelinput{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	pointer-events: none;
+	transition: .5s;
+}/*Não está funcionando no email*/
+.inputuser:focus ~ .labelinput,
+.inputuser:valid ~ .labelinput{
+	top: -20px;
+	font-size: 12px;
+	color: darkcyan;
+}
+.forms{
+	border: none;
+	padding: 7px;
+	border-radius: 10px;
+	outline: none;
+	font-size: 15px;
+}
+#submit{
+	background-image: linear-gradient(to right,rgb(118, 248, 203), #496976);
+	width: 100%;
+	border: none;
+	padding: 14px;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+#submit:hover{
+	background-image: linear-gradient(to right,rgb(75, 255, 192), #496976);
+}
+#para{
+    color: black;
+    font-weight: 800;
+    position: absolute;
+    height: 450px;
+    width: 60%;
+    left: 5%;
+
+}
+#para img{
+    margin-top: 20px;
+    margin-left: 200px;
+    height: 320px;
+    width: 400px;
+    
+}
+#redesociais{
+	position: relative;
+	grid-column: 1/2;
+	grid-row: 2/3;
+
+}
+#redesociais img{
+	height: 50px;
+	width: 50px;
+}
+footer{
+    margin-top: 610px;
+	height: 150px;
+	background-color: #496976;
+	display: grid;
+	grid-template-columns: repeat(4,25%);
+	grid-template-rows: repeat(5,20%);
+}
+#p{
+	grid-column: 1/3;
+	grid-row: 1/2;
+}
+#p2{
+	grid-column: 2/5;
+	grid-row: 3/4;
+}
+#p3{
+	grid-column: 3/5;
+	grid-row: 5/6;
+}
